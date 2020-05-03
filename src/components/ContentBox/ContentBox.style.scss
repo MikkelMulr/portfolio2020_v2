@@ -1,0 +1,60 @@
+.ContentBox {
+	display: flex;
+	flex-direction: column;
+	transform: translateX(100rem);
+	animation: slideLeft 0.75s ease-in-out 0.25s forwards;
+	left: 6rem;
+
+	@media (max-width: 767.98px) {
+		height: 50% !important;
+		clip-path: none !important;
+		left: 0;
+		bottom: 7rem !important;
+	}
+
+	.Deco-One {
+		-webkit-text-fill-color: #ff2e00;
+		-webkit-text-stroke-color: #fff;
+		-webkit-text-stroke-width: 2px;
+		font-size: 18vw;
+		font-weight: 900;
+		height: auto;
+		z-index: 30;
+		padding-top: 1rem;
+		position: relative;
+		bottom: 5rem;
+		left: 10rem;
+		width: 600px;
+		word-wrap: break-word;
+		line-height: 17rem;
+		text-align: left;
+		transform: translateY(50rem);
+		animation: slideUp 0.75s ease-in-out 0.5s forwards;
+
+		@media (max-width: 767.98px) {
+			font-size: 24vw;
+			line-height: 6rem;
+			bottom: 1rem;
+			left: 0.25rem;
+			width: 220px;
+		}
+	}
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(100rem);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(50rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

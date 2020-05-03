@@ -1,0 +1,55 @@
+.WhiteBlock {
+	transition: all 035s linear;
+	animation: slideRight 0.5s ease-in;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	left: 14rem;
+
+	@media (max-width: 767.98px) {
+		height: 40% !important;
+		left: 4rem;
+		bottom: 3rem !important;
+		clip-path: none !important;
+	}
+
+	.Deco-Two {
+		margin-top: 10vh;
+		// font-size: 12rem;
+		font-size: 12vw;
+		font-weight: 900;
+		line-height: 10rem;
+		-webkit-text-fill-color: #fff;
+		-webkit-text-stroke-color: #ff2e00;
+		-webkit-text-stroke-width: 2px;
+		writing-mode: vertical-rl;
+		transform: translateY(100rem);
+		animation: slideUp 0.75s ease-in-out 0.85s forwards;
+		position: relative;
+
+		@media (max-width: 767.98px) {
+			margin-top: 0vh;
+			font-size: 20vw;
+			line-height: 5rem;
+		}
+	}
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-70rem);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(50rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

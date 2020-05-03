@@ -1,0 +1,126 @@
+.Nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: calc(100vw - 5rem);
+	height: calc(100vh - 220px);
+	background-color: #222;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-end;
+	z-index: 1000000;
+	transform: translateX(-200rem);
+	// animation: openNav 1s ease-in-out 0.15s forwards;
+
+	@media (max-width: 767.98px) {
+		height: calc(100vh - 130px);
+		width: 100vw;
+	}
+
+	&--links {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: space-around;
+
+		@media (max-width: 767.98px) {
+			width: calc(100vw - 2rem);
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		&--link {
+			padding-right: 2rem;
+			font-size: 16vh;
+			font-weight: 900;
+			-webkit-text-fill-color: #222;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #fff;
+			opacity: 0.8;
+			transform: translateY(80rem);
+
+			@media (max-width: 767.98px) {
+				font-size: 10vh;
+				padding-right: 1rem;
+			}
+
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&--bar {
+		height: 100%;
+		width: 5rem;
+		background-color: #ff2e00;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+
+		svg {
+			color: #000;
+			font-size: 2rem;
+			filter: invert(1);
+		}
+
+		.logo {
+			height: 2rem;
+			width: 2rem;
+			filter: invert(1);
+		}
+
+		@media (max-width: 767.98px) {
+			width: 3rem;
+		}
+	}
+}
+
+.linkAnim1 {
+	animation: slideUpLink 0.65s ease-in-out 0.55s forwards;
+}
+.linkAnim2 {
+	animation: slideUpLink 0.65s ease-in-out 0.75s forwards;
+}
+.linkAnim3 {
+	animation: slideUpLink 0.65s ease-in-out 0.95s forwards;
+}
+.linkAnim4 {
+	animation: slideUpLink 0.65s ease-in-out 1.15s forwards;
+}
+
+@keyframes openNav {
+	0% {
+		transform: translateX(-200rem);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes closeNav {
+	0% {
+		// transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-200rem);
+	}
+}
+
+@keyframes slideUpLink {
+	0% {
+		transform: translateY(80rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
