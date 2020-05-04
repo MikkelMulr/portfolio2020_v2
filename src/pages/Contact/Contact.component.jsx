@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Contact.style.scss';
 import WhiteBlock from '../../components/WhiteBlock/WhiteBlock.component';
 import ContentBox from '../../components/ContentBox/ContentBox.component';

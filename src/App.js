@@ -6,7 +6,7 @@ import Projects from './pages/Projects/Projects.component';
 import Contact from './pages/Contact/Contact.component';
 import Nav from './components/Nav/Nav.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCrow, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faCrow, faMailBulk, faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import logo from './assets/img/logo.svg';
 import './App.css';
 
@@ -62,7 +62,7 @@ function App() {
 						<FontAwesomeIcon icon={faCoffee} />
 					</Link>
 					<Link to='/projects' onClick={() => setCurrent('projects')}>
-						<FontAwesomeIcon icon={faCrow} />
+						<FontAwesomeIcon icon={faLayerGroup} />
 					</Link>
 					<Link to='/contact' onClick={() => setCurrent('contact')}>
 						<FontAwesomeIcon icon={faMailBulk} />
