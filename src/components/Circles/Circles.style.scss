@@ -1,0 +1,56 @@
+.circleOne,
+.circleTwo {
+	border-radius: 50%;
+	border: 2px solid #fff;
+	position: absolute;
+	z-index: 40;
+}
+
+.circleOne {
+	width: 50rem;
+	height: 50rem;
+	top: 5%;
+	left: 10%;
+	transform: translateY(-100rem);
+	animation: showCircLeft 1s ease-in-out 0.5s forwards;
+
+	@media (max-width: 767.98px) {
+		width: 45rem;
+		height: 45rem;
+		top: 2%;
+		left: -35rem;
+	}
+}
+
+.circleTwo {
+	width: 50rem;
+	height: 50rem;
+	top: 5%;
+	left: 15%;
+	transform: translateX(-100rem);
+	animation: showCircRight 1.25s ease-in-out 0.5s forwards;
+	@media (max-width: 767.98px) {
+		width: 45rem;
+		height: 45rem;
+		top: 4%;
+		left: -30rem;
+	}
+}
+
+@keyframes showCircRight {
+	0% {
+		transform: translateX(-100rem);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes showCircLeft {
+	0% {
+		transform: translateY(-100rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

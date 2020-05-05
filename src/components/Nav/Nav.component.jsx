@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCrow, faMailBulk, faLayerGroup } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faMailBulk, faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../assets/img/logo.svg';
 import './Nav.style.scss';
 

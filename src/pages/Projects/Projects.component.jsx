@@ -4,6 +4,7 @@ import WhiteBlock from '../../components/WhiteBlock/WhiteBlock.component';
 import ContentBox from '../../components/ContentBox/ContentBox.component';
 import Project from '../../components/Project/Project.component';
 import Expanded from '../../components/Project/Expanded/Expanded.component';
+import Circles from '../../components/Circles/Circles.component';
 import lakeridge from '../../assets/img/lakebg.png';
 import tymed from '../../assets/img/tymed.png';
 
@@ -102,6 +103,8 @@ export default function Projects() {
 			) : (
 				<h2 style={{ zIndex: '99999999', fontSize: '5rem', color: '#fff', width: '50%' }}>Hmm something went wrong</h2>
 			)}
+
+			<Circles />
 		</div>
 	);
 }

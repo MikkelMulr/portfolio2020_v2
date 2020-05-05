@@ -5,8 +5,9 @@ import About from './pages/About/About.component';
 import Projects from './pages/Projects/Projects.component';
 import Contact from './pages/Contact/Contact.component';
 import Nav from './components/Nav/Nav.component';
+// import Circles from './components/Circles/Circles.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCrow, faMailBulk, faLayerGroup } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faMailBulk, faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import logo from './assets/img/logo.svg';
 import './App.css';
 
@@ -83,8 +84,9 @@ function App() {
 					<Route exact path='/contact' component={Contact} />
 				</Switch>
 			</section>
-			<div className='circleOne' />
-			<div className='circleTwo' />
+			{/* <div className='circleOne' />
+			<div className='circleTwo' /> */}
+			{/* <Circles /> */}
 			<article className={`App--right ${bg}`}>
 				<h1>Mueller</h1>
 			</article>

@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.style.scss';
 import WhiteBlock from '../../components/WhiteBlock/WhiteBlock.component';
 import ContentBox from '../../components/ContentBox/ContentBox.component';
+import Circles from '../../components/Circles/Circles.component';
 
 export default function Contact() {
 	let viewWidth = window.innerWidth < 767 ? 'contLinkSide' : 'contLinkUp';
@@ -47,6 +48,7 @@ export default function Contact() {
 					RESUME
 				</a>
 			</div>
+			<Circles />
 		</div>
 	);
 }

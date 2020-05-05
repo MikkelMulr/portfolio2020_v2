@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.style.scss';
 import WhiteBlock from '../../components/WhiteBlock/WhiteBlock.component';
 import ContentBox from '../../components/ContentBox/ContentBox.component';
+import Circles from '../../components/Circles/Circles.component';
 export default function Home() {
 	return (
 		<div className='Home'>
@@ -15,6 +16,7 @@ export default function Home() {
 				<p className='Decos-sub sub4'>ITERATE</p>
 				<p className='Decos-sub sub5'>ITERATE</p>
 			</section>
+			<Circles />
 		</div>
 	);
 }

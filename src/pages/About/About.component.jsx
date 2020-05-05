@@ -1,6 +1,7 @@
 import React from 'react';
 import WhiteBlock from '../../components/WhiteBlock/WhiteBlock.component';
 import ContentBox from '../../components/ContentBox/ContentBox.component';
+import Circles from '../../components/Circles/Circles.component';
 
 import './About.style.scss';
 export default function About() {
@@ -24,6 +25,7 @@ export default function About() {
 					</p>
 				</section>
 			</article>
+			<Circles />
 		</div>
 	);
 }
