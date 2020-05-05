@@ -38,7 +38,7 @@ export default function Nav({ openclose, setPage, linkClicked }) {
 					About
 				</Link>
 				<Link
-					to='projects'
+					to='/projects'
 					className={`Nav--links--link ${navState === 'openNav' ? 'linkAnim3' : null}`}
 					onClick={() => {
 						setPage('projects');
@@ -48,7 +48,7 @@ export default function Nav({ openclose, setPage, linkClicked }) {
 					Projects
 				</Link>
 				<Link
-					to='contact'
+					to='/contact'
 					className={`Nav--links--link ${navState === 'openNav' ? 'linkAnim4' : null}`}
 					onClick={() => {
 						setPage('contact');
@@ -63,10 +63,10 @@ export default function Nav({ openclose, setPage, linkClicked }) {
 			{/* RIGHT SIDE LINK ICONS */}
 			<div className='Nav--bar'>
 				<Link
-					to='contact'
+					to='/'
 					className={`Nav--links--link-icon ${navState === 'openNav' ? 'linkAnim1' : null}`}
 					onClick={() => {
-						setPage('contact');
+						setPage('home');
 						linkClicked();
 					}}
 				>
@@ -74,10 +74,10 @@ export default function Nav({ openclose, setPage, linkClicked }) {
 				</Link>
 
 				<Link
-					to='contact'
+					to='/about'
 					className={`Nav--links--link-icon ${navState === 'openNav' ? 'linkAnim2' : null}`}
 					onClick={() => {
-						setPage('contact');
+						setPage('about');
 						linkClicked();
 					}}
 				>
@@ -85,10 +85,10 @@ export default function Nav({ openclose, setPage, linkClicked }) {
 				</Link>
 
 				<Link
-					to='contact'
+					to='/projects'
 					className={`Nav--links--link-icon ${navState === 'openNav' ? 'linkAnim3' : null}`}
 					onClick={() => {
-						setPage('contact');
+						setPage('projects');
 						linkClicked();
 					}}
 				>
@@ -96,7 +96,7 @@ export default function Nav({ openclose, setPage, linkClicked }) {
 				</Link>
 
 				<Link
-					to='contact'
+					to='/contact'
 					className={`Nav--links--link-icon ${navState === 'openNav' ? 'linkAnim4' : null}`}
 					onClick={() => {
 						setPage('contact');
