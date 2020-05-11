@@ -72,12 +72,14 @@
 			opacity: 0.25;
 			transform: translateY(80rem);
 			animation: slideUp 0.65s ease-in-out 1.75s forwards;
+			filter: blur(0.5px);
 		}
 
 		.sub5 {
 			opacity: 0.05;
 			transform: translateY(80rem);
 			animation: slideUp 0.65s ease-in-out 1.85s forwards;
+			filter: blur(1px);
 		}
 	}
 }

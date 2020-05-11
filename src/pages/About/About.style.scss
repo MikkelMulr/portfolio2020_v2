@@ -68,8 +68,8 @@
 			}
 
 			span {
-				color: transparent;
-				animation: spanText 1s ease-in-out 1.25s forwards;
+				color: #222;
+				animation: spanText 0.5s ease-in-out 1.25s forwards;
 			}
 		}
 	}
@@ -102,8 +102,8 @@
 			}
 
 			span {
-				color: transparent;
-				animation: spanText 0.2s ease-in-out 1.8s forwards;
+				color: #222;
+				animation: spanText 0.5s ease-in-out 1.35s forwards;
 			}
 		}
 	}
@@ -137,7 +137,7 @@
 
 	@keyframes spanText {
 		0% {
-			color: #00c2ff;
+			color: #222;
 		}
 		100% {
 			color: #fff;
