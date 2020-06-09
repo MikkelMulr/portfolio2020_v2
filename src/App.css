@@ -107,7 +107,8 @@
 	width: 100%;
 	text-align: right;
 	color: #fff;
-	font-size: 16vw;
+	line-height: 14vw;
+	font-size: 14vw;
 	font-weight: 900;
 	transform: translateX(-100rem);
 	animation: slideRightApp 0.75s ease-in-out 0.25s forwards;
@@ -159,32 +160,6 @@
 	transform: translateX(20rem);
 	animation: slideLeftApp 0.5s ease-in-out 0.15s forwards;
 }
-/* 
-.circleOne,
-.circleTwo {
-	border-radius: 50%;
-	border: 2px solid #fff;
-	position: absolute;
-	z-index: 40;
-}
-
-.circleOne {
-	width: 50rem;
-	height: 50rem;
-	top: 5%;
-	left: 10%;
-	transform: translateY(-100rem);
-	animation: showCircLeft 1s ease-in-out 0.5s forwards;
-}
-
-.circleTwo {
-	width: 50rem;
-	height: 50rem;
-	top: 5%;
-	left: 15%;
-	transform: translateX(-100rem);
-	animation: showCircRight 1.25s ease-in-out 0.5s forwards;
-} */
 
 /* MOBILE */
 /* ################### */
