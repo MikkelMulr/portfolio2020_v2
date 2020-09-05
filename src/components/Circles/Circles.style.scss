@@ -14,11 +14,22 @@
 	transform: translateY(-100rem);
 	animation: showCircLeft 1s ease-in-out 0.5s forwards;
 
+	@media (max-width: 1199.98px) {
+		// O_o
+	}
+
+	@media (max-width: 991.98px) {
+		width: 40rem;
+		height: 40rem;
+		top: 13%;
+		left: 10%;
+	}
+
 	@media (max-width: 767.98px) {
 		width: 45rem;
 		height: 45rem;
-		top: 2%;
-		left: -35rem;
+		top: 5%;
+		left: -30rem;
 	}
 }
 
@@ -29,11 +40,23 @@
 	left: 15%;
 	transform: translateX(-100rem);
 	animation: showCircRight 1.25s ease-in-out 0.5s forwards;
+
+	@media (max-width: 1199.98px) {
+		// O_o
+	}
+
+	@media (max-width: 991.98px) {
+		width: 40rem;
+		height: 40rem;
+		top: 15%;
+		left: 15%;
+	}
+
 	@media (max-width: 767.98px) {
 		width: 45rem;
 		height: 45rem;
 		top: 4%;
-		left: -30rem;
+		left: -35rem;
 	}
 }
 

@@ -7,6 +7,14 @@
 	justify-content: flex-end;
 	left: 14rem;
 
+	@media (max-width: 1199.98px) {
+		left: 11rem;
+	}
+
+	@media (max-width: 991.98px) {
+		left: 10rem;
+	}
+
 	@media (max-width: 767.98px) {
 		height: 40% !important;
 		left: 4rem;
@@ -27,6 +35,18 @@
 		transform: translateY(100rem);
 		animation: slideUp 0.75s ease-in-out 0.85s forwards;
 		position: relative;
+
+		@media (max-width: 1199.98px) {
+			margin-top: 0vh;
+			font-size: 20vw;
+			line-height: 5rem;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-top: 5vh;
+			font-size: 20vw;
+			line-height: 5rem;
+		}
 
 		@media (max-width: 767.98px) {
 			margin-top: 0vh;

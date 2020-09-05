@@ -27,11 +27,11 @@ export default function Expanded({ title, desc, link, tech, returnTo }) {
 						<div className='frame-back' />
 						<div className='frame-front' style={{ backgroundImage: `url(${link})` }} />
 					</div>
-					<p className='Expanded--main--preview-text'>{desc}</p>
+					<div className='Expanded--main--title'>
+						<h2>{title}</h2>
+					</div>
 				</div>
-				<div className='Expanded--main--title'>
-					<h2>{title}</h2>
-				</div>
+				<p className='Expanded--main--preview-text'>{desc}</p>
 			</section>
 
 			<div className='Expanded--backbtn'>

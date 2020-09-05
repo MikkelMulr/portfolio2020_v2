@@ -13,6 +13,11 @@ export default function About() {
 			<article className='About--Content'>
 				<section className='About--Left'>
 					<p className='About--Left--text'>
+						<span className='special'>
+							Hey, I'm <span>Mike</span>
+						</span>
+					</p>
+					<p className='About--Left--text'>
 						A <span>web developer</span> from <span>Toronto</span>, Ontario.
 					</p>
 					<p className='About--Left--text'>

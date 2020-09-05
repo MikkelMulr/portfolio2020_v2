@@ -11,17 +11,28 @@
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #ff9900;
-		font-size: 10vw;
+		font-size: 15vh;
 		font-weight: 900;
-		line-height: 12vw;
+		line-height: 12vh;
 		padding-right: 0rem;
 		height: 25%;
 		transform: translateY(70rem);
 		animation: textUp 1.2s ease-in-out 0.3s forwards;
 
+		@media (max-width: 1199.98px) {
+			font-size: 11vh;
+			line-height: 15vh;
+		}
+
+		@media (max-width: 991.98px) {
+			font-size: 8vh;
+			line-height: 16vh;
+		}
+
 		@media (max-width: 767.98px) {
-			line-height: 20vw;
-			height: 19%;
+			font-size: 4vh;
+			line-height: 10vh;
+			height: 20%;
 		}
 	}
 
@@ -34,6 +45,15 @@
 		justify-content: space-between;
 		margin-left: -10vw;
 		z-index: 99999;
+
+		@media (max-width: 991.98px) {
+			padding-bottom: 10vh;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+			align-items: flex-start;
+			justify-items: center;
+		}
 
 		@media (max-width: 767.98px) {
 			padding-bottom: 10vh;
