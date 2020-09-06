@@ -42,7 +42,7 @@ export default function Contact() {
 				</a>
 				<a
 					className='Contact--links--link'
-					href='#'
+					href='https://www.linkedin.com/in/michael-mueller-10a092161/'
 					style={{ animation: `${viewWidth} 0.45s ease-in-out 1.6s forwards` }}
 				>
 					RESUME
