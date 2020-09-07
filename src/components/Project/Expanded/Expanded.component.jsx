@@ -34,6 +34,18 @@ export default function Expanded({ title, desc, link, tech, returnTo }) {
 				<p className='Expanded--main--preview-text'>{desc}</p>
 			</section>
 
+			<div className='Expanded--btn'>
+				<h2 className='backbtn' onClick={() => returnTo(0)}>
+					Visit
+				</h2>
+			</div>
+
+			<div className='Expanded--btn'>
+				<h2 className='backbtn' onClick={() => returnTo(0)}>
+					Code
+				</h2>
+			</div>
+
 			<div className='Expanded--backbtn'>
 				<h2 className='backbtn' onClick={() => returnTo(0)}>
 					Back
