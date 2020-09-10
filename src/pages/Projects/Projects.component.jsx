@@ -7,6 +7,7 @@ import Expanded from '../../components/Project/Expanded/Expanded.component';
 import Circles from '../../components/Circles/Circles.component';
 import lakeridge from '../../assets/img/lakebg.png';
 import tymed from '../../assets/img/tymed.png';
+import bookr from '../../assets/img/bookr.png';
 
 export default function Projects() {
 	const [ viewState, setViewState ] = useState(0);
@@ -25,13 +26,13 @@ export default function Projects() {
 		},
 		{
 			title: 'LakeRidge Health',
-			link: lakeridge,
+			link: 'https://lakeridgemyths.netlify.app/',
 			tech: [ 'vuejs-plain', 'nodejs-plain', 'javascript-plain', 'html5-plain', 'css3-plain' ],
 			desc:
 				'A fact vs fiction informative application built for LakeRidge Health, designed to dispell common myths about clinical trials.'
 		},
 		{
-			title: 'ChatStream',
+			title: 'bookr',
 			link: '#',
 			tech: [ 'react-original', 'nodejs-plain', 'javascript-plain', 'html5-plain', 'sass-original' ],
 			desc: ''
@@ -64,16 +65,16 @@ export default function Projects() {
 					<div
 						className='Projects--cards--card'
 						style={{ animation: `projectUp 1s ease-in-out 0.5s forwards` }}
-						onClick={() => handleShowProject(2)}
+						onClick={() => handleShowProject(3)}
 					>
-						<Project details={projectDetails[1]} prev={lakeridge} />
+						<Project details={projectDetails[2]} prev={bookr} />
 					</div>
 					<div
 						className='Projects--cards--card'
-						style={{ animation: `projectUp 1s ease-in-out 0.75s forwards` }}
-						onClick={() => handleShowProject(3)}
+						style={{ animation: `projectUp 1s ease-in-out 0.5s forwards` }}
+						onClick={() => handleShowProject(2)}
 					>
-						<Project details={projectDetails[2]} />
+						<Project details={projectDetails[1]} prev={lakeridge} />
 					</div>
 				</section>
 			) : viewState === 1 ? (

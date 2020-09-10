@@ -36,7 +36,7 @@ export default function Expanded({ title, desc, link, tech, returnTo }) {
 
 			<div className='Expanded--btn'>
 				<h2 className='backbtn' onClick={() => returnTo(0)}>
-					Visit
+					<a href={link}>Visit</a>
 				</h2>
 			</div>
 
